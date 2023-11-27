@@ -5,12 +5,12 @@ This repository contains the initial version (1.0) of a Python script designed f
  The script establishes a socket connection over a specified port and sends sensor data to the server, receiving responses in return.
 Features
 
-    ## Flexible Data Handling:
-        The script provides two options for sending data:
+    * Flexible Data Handling:
+        The script can proccess data in two options:
             Option 1: Format all data types into a single data structure, converting everything into string format.
             Option 2: Format data types into their respective data structures, identifying and storing each type appropriately.
 
-    ## User-Defined Sensor Data:
+    * User-Defined Sensor Data:
         Users can easily modify the sensor_data variable to include actual sensor values.
 
     Customizable Connection:

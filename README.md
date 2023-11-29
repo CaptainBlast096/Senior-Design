@@ -1,7 +1,7 @@
 # Senior-Design
 Program for Indsutrial Computer for Measutronics
-This repository contains the initial version (1.0) of a Python script designed for real-time data transmission from a sensor-equipped device (e.g., Raspberry Pi) to a server.
-# Version 1.0
+This repository contains the initial version (0.1) of a Python script designed for real-time data transmission from a sensor-equipped device (e.g., Raspberry Pi) to a server.
+# Version 0.1
  The script establishes a socket connection over a specified port and sends sensor data to the server, receiving responses in return.
 Features
 
@@ -29,3 +29,17 @@ Features
 
     * Improved User Interaction:
         Enhance the script to accept user inputs for a more interactive experience.
+
+# Version 0.2
+ Features
+  * Addition of a new file COM.py that creates a serial connection to a computer
+  * Will infinently send information to the Raspberry Pi
+    
+## Usage:
+  * Collect all the raw data being outputed from computer into strings
+  * Sending flags in case data is incorrect
+    
+## Future Enhancements:
+ * Error-Handling
+ * Creation of Flags/Logs
+ * Structured output

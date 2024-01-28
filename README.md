@@ -43,3 +43,13 @@ Features
  * Error-Handling
  * Creation of Flags/Logs
  * Structured output
+
+# Version 0.5
+Features
+ * Imprvements towards the serial communication
+ * Storage of NMEA output messages
+   
+## Future Enchancements:
+ * Enhancements towards NMEA output messages
+ * Connection to a server
+ * Parsing features

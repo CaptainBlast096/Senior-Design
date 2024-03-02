@@ -53,3 +53,11 @@ Features
  * Enhancements towards NMEA output messages
  * Connection to a server
  * Parsing features
+
+# Version 0.7
+Features
+ * Additional file installation.sh has been added
+   * Will updated Ubuntu Server, install Git, Apache Server, MySQL, Python, Vim, along with PySerial and Time libraries in Python
+   
+## Future Enchancements:
+ * Simplify the code in order to compact it

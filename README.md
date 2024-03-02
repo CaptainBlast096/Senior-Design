@@ -61,3 +61,4 @@ Features
    
 ## Future Enchancements:
  * Simplify the code in order to compact it
+ * Make an automation service to run installation.sh upon startup

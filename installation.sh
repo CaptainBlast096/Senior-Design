@@ -14,23 +14,35 @@ else
 echo 'Vim is already installed'
 fi
 
-if ! command -v python &> /dev/null
+if ! command -v python3 &> /dev/null
 then
 echo 'Python is not installed. Installing...'
-sudo apt install python -y
+sudo apt install python3 -y
 echo 'Python has been installed'
 else
 echo 'Python is already installed'
 fi
 
+if ! command -v python3-pip &> /dev/null
+then
+echo 'Pip is not installed. Installing...'
+sudo apt install python3-pip -y
+echo 'Pip has been installed'
+else
+echo 'Pip is already installed'
+fi
+
 if ! command -v mysql-server &> /dev/null
 then
 echo 'MySQL is not installed. Installing...'
-sudo apt install MySQL -y
+sudo apt install MySQL -y #Error installing MySQL
 echo 'MySQL has been installed'
+echo 'Enabling MySQL'
+sudo systemctl enable mysql.service
 else
 echo 'MySQL is already installed'
 fi
+
 
 if ! command -v git &> /dev/null
 then
@@ -40,6 +52,8 @@ echo 'Git has been installed'
 else
 echo 'Git is already installed'
 fi
+
+
 
 if ! command -v apache2 &> /dev/null
 then
@@ -55,11 +69,20 @@ sudo systemctl is-enabled apache2
 fi
 
 ## Installing Libraries
-if ! command -v apache2 &> /dev/null
+if ! command -v time &> /dev/null
 then
 echo 'Time is not installed. Installing...'
-sudo apt install python3-time -y
+pip3 time 
 echo 'Time has been installed'
 else
 echo 'Time is already installed'
+fi
+
+if ! command -v pyserial &> /dev/null
+then
+echo 'PySerial is not installed. Installing...'
+pip3 install pyserial 
+echo 'PySerial has been installed'
+else
+echo 'PySerial'
 fi

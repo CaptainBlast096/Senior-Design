@@ -1,5 +1,5 @@
 [Unit]
-Description= Will execute the installation.sh upon startup
+Description= Will execute the installation.sh upon startup. Place in /etc/systemd/user
 After=network.target
 
 [Service]

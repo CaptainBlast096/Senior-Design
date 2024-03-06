@@ -1,0 +1,10 @@
+[Unit]
+Description= Will execute the installation.sh upon startup
+After=network.target
+
+[Service]
+Type=simple
+ExecStart= /home/jaleel/Downloads/installation.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -66,3 +66,7 @@ Features
 # Version 0.75
 Features
  * Debugged installation.sh
+
+# Version 0.77
+Features
+ * installation.system

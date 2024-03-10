@@ -66,11 +66,11 @@ else
 echo 'Time is already installed'
 fi
 
-if ! command -v serial &> /dev/null
+if ! command -v pyserial &> /dev/null
 then
-echo 'Serial is not installed. Installing...'
-pip3 install serial 
-echo 'Serial has been installed'
+echo 'PySerial is not installed. Installing...'
+pip3 install pyserial 
+echo 'PySerial has been installed'
 else
-echo 'Serial is already installed'
+echo 'PySerial is already installed'
 fi

@@ -43,18 +43,6 @@ else
 echo 'MySQL is already installed'
 fi
 
-
-if ! command -v git &> /dev/null
-then
-echo 'Git is not installed. Installing...'
-sudo apt install git -y
-echo 'Git has been installed'
-else
-echo 'Git is already installed'
-fi
-
-
-
 if ! command -v apache2 &> /dev/null
 then
 echo 'Apache Server is not installed. Installing...'
@@ -78,11 +66,11 @@ else
 echo 'Time is already installed'
 fi
 
-if ! command -v pyserial &> /dev/null
+if ! command -v serial &> /dev/null
 then
-echo 'PySerial is not installed. Installing...'
-pip3 install pyserial 
-echo 'PySerial has been installed'
+echo 'Serial is not installed. Installing...'
+pip3 install serial 
+echo 'Serial has been installed'
 else
-echo 'PySerial'
+echo 'Serial is already installed'
 fi

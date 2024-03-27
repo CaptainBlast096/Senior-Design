@@ -70,3 +70,7 @@ Features
 # Version 0.77
 Features
  * installation.system
+   
+# Version 0.8
+Features
+ * COM.system

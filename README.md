@@ -74,3 +74,8 @@ Features
 # Version 0.8
 Features
  * COM.system
+
+# Version 0.85
+Features
+ * Addition of a new file potentiometer.py that simulates a potentiometer
+ * Updated installation.sh to included necessary libraries for potentiometer.py

@@ -74,3 +74,12 @@ echo 'PySerial has been installed'
 else
 echo 'PySerial is already installed'
 fi
+
+if ! command -v adafruit-circuitpython-mcp3xxx &> /dev/null
+then
+echo 'Adafruit Circuit Python is not installed. Installing...'
+pip3 install adafruit-circuitpython-mcp3xxx
+echo 'Adafruit Circuit Python has benn installed'
+else
+echo 'Adafruit Circuit Python is already installed'
+fi

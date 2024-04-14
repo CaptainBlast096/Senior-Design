@@ -1,6 +1,5 @@
 import serial
 import time
-import logging
 
 #Used for finding the avilable COM port
     # import serial.tools.list_ports
@@ -19,7 +18,7 @@ Heading = []
 Position = []
 XYZ = []
       
-serialConnection = serial.Serial(port='COM3',baudrate=9600 )
+serialConnection = serial.Serial(port='/dev/ttyUSB0',baudrate=9600 )
     # baudrate is the rate at which the number of singla elements occurs per second
         # Can modify in the Raspberry Pi and have it match here
         # Default should be set to 9600
@@ -50,8 +49,8 @@ while True: # Loop is running for infinity adjust it how you see fit
         elif valueInString.startswith('$PHTRO'):
             Attitude.append(valueInString)
         # 1st test to see if contents are stored in respective arrays 2nd Check if any data will be leaked 3rd The limitations of contact data being stored in arrays    
+        print("Fuel: ", Fuel)
     except Exception as e:
         print(f"Error: {e}")
 # serialConnection.close()
     # Will stop the connection 
-

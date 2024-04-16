@@ -6,7 +6,7 @@ Wants=installation.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /usr/local/bin/COM.py
+ExecStart=/usr/bin/python3 /scripts/COM.py
 TTYPath=/dev/console
 
 [Install]

@@ -4,7 +4,7 @@
 echo 'Updating OS...' 
 sudo apt-get update
 
-## Installing files
+## Installing General Applications
 if ! command -v vim &> /dev/null
 then
 echo 'Vim is not installed. Installing...'
@@ -45,7 +45,18 @@ echo 'Enabling Apache Server'
 sudo systemctl is-enabled apache2
 fi
 
-## Installing Libraries
+if ! command -v ssh &> /dev/null
+then
+echo 'SSH is not installed. Installing...'
+sudo apt install openssh-server -y
+echo 'SSH has been installed'
+echo 'Setting firewall to allow SSH'
+sudo ufw allow ssh
+else
+echo 'SSH is already installed'
+fi
+
+## Installing Python Libraries
 if ! command -v time &> /dev/null
 then
 echo 'Time is not installed. Installing...'

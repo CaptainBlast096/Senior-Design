@@ -1,10 +1,10 @@
 [Unit]
-Description= Will execute the installation.sh upon startup. Place in /etc/systemd/user
+Description= Will execute the installation.sh upon startup.
 After=network.target
 
 [Service]
 Type=simple
-ExecStart= /home/jaleel/Downloads/installation.sh
+ExecStart= /scripts/installation.sh
 
 [Install]
 WantedBy=multi-user.target

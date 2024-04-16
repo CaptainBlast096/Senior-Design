@@ -7,7 +7,6 @@ Wants=installation.service
 [Service]
 Type=simple
 ExecStart=/usr/bin/python3 /scripts/potentiometer.py
-TTYPath=/dev/console
 
 [Install]
 WantedBy=multi-user.target

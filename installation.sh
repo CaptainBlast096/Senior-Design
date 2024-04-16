@@ -32,17 +32,6 @@ else
 echo 'Pip is already installed'
 fi
 
-if ! command -v mysql-server &> /dev/null
-then
-echo 'MySQL is not installed. Installing...'
-sudo apt install MySQL -y #Error installing MySQL
-echo 'MySQL has been installed'
-echo 'Enabling MySQL'
-sudo systemctl enable mysql.service
-else
-echo 'MySQL is already installed'
-fi
-
 if ! command -v apache2 &> /dev/null
 then
 echo 'Apache Server is not installed. Installing...'
@@ -82,4 +71,33 @@ pip3 install adafruit-circuitpython-mcp3xxx
 echo 'Adafruit Circuit Python has benn installed'
 else
 echo 'Adafruit Circuit Python is already installed'
+fi
+
+# New Shit
+
+if ! command -v RPI.GPIO &> /dev/null
+then
+echo 'GPIO is not installed. Installing...'
+pip3 install RPI.GPIO
+echo 'GPIO has benn installed'
+else
+echo 'GPIO is already installed'
+fi
+
+if ! command -v adafruit-blinka &> /dev/null
+then
+echo 'adafruit-blinka is not installed. Installing...'
+pip3 install RPI.GPIO
+echo 'adafruit-blinka has benn installed'
+else
+echo 'adafruit-blinka is already installed'
+fi
+
+if ! command -v adafruit-io &> /dev/null
+then
+echo 'adafruit-io is not installed. Installing...'
+pip3 install RPI.GPIO
+echo 'adafruit-io has benn installed'
+else
+echo 'adafruit-io is already installed'
 fi

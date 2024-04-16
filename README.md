@@ -79,3 +79,8 @@ Features
 Features
  * Addition of a new file potentiometer.py that simulates a potentiometer
  * Updated installation.sh to included necessary libraries for potentiometer.py
+   
+# Version 0.9
+Features
+ * Addition of a new file potentiometer.system that startsup potentiometer.py
+ * Updated installation.sh to contain new libraries for potentiometer.py
